@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'https://supermarket.getchef.com/api/v1'
+
+cookbook 'chruby', git: 'https://github.com/ArtemPyanykh/chef-chruby'
+cookbook 'ruby', path: './'

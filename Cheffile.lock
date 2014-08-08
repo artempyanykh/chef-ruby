@@ -1,0 +1,32 @@
+SITE
+  remote: https://supermarket.getchef.com/api/v1
+  specs:
+    7-zip (1.0.2)
+      windows (>= 1.2.2)
+    ark (0.9.0)
+      7-zip (>= 0.0.0)
+      windows (>= 0.0.0)
+    chef_handler (1.1.6)
+    ruby_build (0.8.0)
+    windows (1.34.0)
+      chef_handler (>= 0.0.0)
+
+GIT
+  remote: https://github.com/ArtemPyanykh/chef-chruby
+  ref: master
+  sha: 68a4a560a51152df665d9af07c143830e19ac765
+  specs:
+    chruby (0.1.1)
+      ark (>= 0.0.0)
+
+PATH
+  remote: ./
+  specs:
+    ruby (0.1.0)
+      chruby (>= 0.0.0)
+      ruby_build (>= 0.0.0)
+
+DEPENDENCIES
+  chruby (>= 0)
+  ruby (>= 0)
+
